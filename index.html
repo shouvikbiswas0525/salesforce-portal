@@ -7,6 +7,25 @@
   </head>
   <body>
     <h1>Welcome to Salesforce Portal</h1>
-    <button type="button">Login with Salesforce</button>
+
+    <div id="login-section">
+    <button type="button" onclick="login()">Login with Salesforce</button>
+    </div>
+
+    <div id = "user section">
+      <h2>User Information</h2>
+      <p><strong>Name:</strong> <span id="user-name"></span></p>
+      <p><strong>Email:</strong> <span id="user-email"></span></p>
+      <p><strong>Username:</strong> <span id="user-username"></span></p>
+      <button type = "button" onclick="logout()">Logout</button>
+    </div>
+
+     <div id="error-section" style="display:none">
+      <p style="color:red">Something went wrong. Please try again.</p>
+    </div>
+
+    <script src = "index.js"></script>
+
+
   </body>
 </html>
