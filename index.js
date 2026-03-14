@@ -22,6 +22,7 @@ async function fetchUserInfo()
     try
     {
         const response = await fetch(`${BACKEND_URL}/api/userinfo`, {
+            method: 'GET',
             credentials: 'include'
           });
     
